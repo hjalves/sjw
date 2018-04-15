@@ -1,5 +1,11 @@
 # Config file for sjw
 
+[units]
+autossh = 'autossh.service'
+
+[wamp]
+router = "ws://localhost:8080/ws"
+realm = "latitude"
 
 # Logging configuration
 
@@ -31,14 +37,11 @@ formatter = "simple"
 level = "DEBUG"
 stream = "ext://sys.stdout"
 
-[logging.loggers.asyncio]
-level = "DEBUG"
-
-[logging.loggers."aiohttp.access"]
+[logging.loggers.twisted]
 level = "DEBUG"
 
 [logging.loggers.sjw]
-level = "INFO"
+level = "DEBUG"
 
 [logging.formatters.colored.log_colors]
 CRITICAL = "red,bg_white"

@@ -1,0 +1,6 @@
+Twisted==17.9.0
+txdbus==1.1.0
+autobahn==18.4.1
+toml==0.9.4
+colorlog==3.1.2
+
